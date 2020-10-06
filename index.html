@@ -10,20 +10,17 @@
             <p>My favorite color is black and I wear Reeboks</p>
         </section>
 
-        <section id='data-input'></section>
-        <section id='headline-display'></section>
-
-        <section id='data-output'>
+        <section id='data-input'>
             <h1>Font Styler</h1>
             <label for="font-size">Font Size</label>
             <input id='input-size' type="number">
 
             <label for="font-family">Font Family</label>
             <select name="font-family" id="select-font">
-                <option value="Helvetic"></option>
-                <option value="Arial"></option>
-                <option value="Times New Roman"></option>
-                <option value="Georgia"></option>
+                <option value="Helvetic">Helvetic</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Georgia">Georgia</option>
             </select>
 
             <label for="font-color">Font color</label>
@@ -33,7 +30,20 @@
             <input id='input-bg-color' type="color" value="#fff">
 
             <label for="enter-text">Enter text</label>
-            <textarea id="enter-text" cols="30" rows="10"></textarea>
+            <textarea id="enter-text"></textarea>
+        </section>
+
+        <section id='headline-display'>
+            <h1 id="display"></h1>
+        </section>
+
+        <section id='data-output'>
+            <pre><code>.headline {
+                font-size: <span id="show-size">16</span>px;
+                font-family: <span id="show-font">Times</span>;
+                color: <span id="show-color">#000</span>;
+                background-color: <span id="show-bg-color">#fff</span>;
+            }</code></pre>
         </section>
         
         <script scr='./script.js'></script>
