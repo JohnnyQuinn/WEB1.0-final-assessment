@@ -25,3 +25,9 @@ body {
 #headline-display {
     border-style: solid;
 }
+
+#display {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
