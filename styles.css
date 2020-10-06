@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-side {
+    margin: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+#right-side {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#data-input {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 10px;
+}
+
+#headline-display {
+    border-style: solid;
+}

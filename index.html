@@ -5,46 +5,51 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <section id='student-info'>
-            <h1>Johnny Quinn</h1>
-            <p>My favorite color is black and I wear Reeboks</p>
-        </section>
+        <div id="left-side">
+            <section id='student-info'>
+                <h1>Johnny Quinn</h1>
+                <p>My favorite color is black and I wear Reeboks</p>
+            </section>
 
-        <section id='data-input'>
-            <h1>Font Styler</h1>
-            <label for="font-size">Font Size</label>
-            <input id='input-size' type="number">
+            <section id='data-input'>
+                <h1>Font Styler</h1>
+                <label for="font-size">Font Size</label>
+                <input id='input-size' type="number">
 
-            <label for="font-family">Font Family</label>
-            <select name="font-family" id="select-font">
-                <option value="Helvetic">Helvetic</option>
-                <option value="Arial">Arial</option>
-                <option value="Times New Roman">Times New Roman</option>
-                <option value="Georgia">Georgia</option>
-            </select>
+                <label for="font-family">Font Family</label>
+                <select name="font-family" id="select-font">
+                    <option value="Helvetic">Helvetic</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
 
-            <label for="font-color">Font color</label>
-            <input id='input-color' type="color" value="#000">
+                <label for="font-color">Font color</label>
+                <input id='input-color' type="color" value="#000">
 
-            <label for="background-color">Background color</label>
-            <input id='input-bg-color' type="color" value="#fff">
+                <label for="background-color">Background color</label>
+                <input id='input-bg-color' type="color" value="#fff">
 
-            <label for="enter-text">Enter text</label>
-            <textarea id="enter-text"></textarea>
-        </section>
+                <label for="enter-text">Enter text</label>
+                <textarea id="enter-text"></textarea>
+            </section>
+        </div>
 
-        <section id='headline-display'>
-            <h1 id="display"></h1>
-        </section>
-
-        <section id='data-output'>
-            <pre><code>.headline {
-                font-size: <span id="show-size">16</span>px;
-                font-family: <span id="show-font">Times</span>;
-                color: <span id="show-color">#000</span>;
-                background-color: <span id="show-bg-color">#fff</span>;
-            }</code></pre>
-        </section>
+        <div id="right-side">
+            <section id='headline-display'>
+                <h1 id="display">Sample text</h1>
+            </section>
+    
+            <section id='data-output'>
+                <h1>Font Settings</h1>
+                <pre><code>.headline {
+                    font-size: <span id="show-size">16</span>px;
+                    font-family: <span id="show-font">Times</span>;
+                    color: <span id="show-color">#000</span>;
+                    background-color: <span id="show-bg-color">#fff</span>;
+                }</code></pre>
+            </section>
+        </div>
         
         <script scr='./script.js'></script>
     </body>
